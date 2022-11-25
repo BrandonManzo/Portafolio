@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top left, #fdbb2d, #22c1c3); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.titulo{
+    color: black
+}
+
+.parrafo {
+    text-align: center;
+}
+
+.btn{
+    color: black;
+    background: #CD6155;
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    font-size: 13px;
+    padding: 13px 17px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+}
+
+.btn:hover{
+    background-position: 0;
+}
+
+.conversor-imagen{
+    width: 150px;
+}
+
+.moneda{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moneda select{
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.moneda input {
+    border: 1px;
+    font-size: 30px;
+    text-align: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Mukta', sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.taza-cambio-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cambio{
+    color: black;
+    font-size: 14px;
+    padding: 0 10px;
+    font-weight: 600;
+    font-family: 'Mukta', sans-serif;
+}
+
+select:focus, input:focus, button:focus{
+    outline: 0;
+}
+
+div {
+    color: #fff;
+    text-align: center;
+    width: auto;
+}
+
+div a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+}
+
+div nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+div nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+div nav ul li a:hover {
+    color: #ff5080;
+}
+
+@media (max-width:600px) {
+    .moneda input{
+        width: 200px;
+    }
+    
+}

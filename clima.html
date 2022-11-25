@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador del clima</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/clima.css">
+    <script src="/js/clima.js" defer></script>
+</head>
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>El clima</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="index.html" class="seleccionado">Portafolio</a></li>
+                            <li><a href="/mate.html" class="seleccionado">Operaciones</a></li>
+                            <li><a href="/conver.html" class="seleccionado">Convertidor</a></li>
+                            <li><a href="/palabras.html" class="seleccionado">Palabras</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </section>
+    <section class="weather-content">
+        <h1>Buscador del clima</h1>
+        <div class="result">
+            <p>Agrege cuidad y pais</p>
+        </div>
+        <form action="" method="POST" class="get-weather">
+            <input type="text" name="ciudad" id="ciudad" placeholder="Escribe el estado o ciudad">
+            <select name="" id="pais">
+                <option disabled selected value="">Selecciona el país</option>
+                <option value="MX">México</option>
+                <option value="US">Estados Unidos</option>
+                <option value="CA">Canada</option>
+            </select>
+            <input type="submit" class="btn" name="" id="" value="Obtener Clima">
+        </form>
+    </section>
+    
+</body>
+</html>

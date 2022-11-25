@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/style/conver.css">
+    <title>Convertidor de moneda</title>
+</head>
+<body>
+    <div>
+        <nav id="nav" class="">
+            <ul id="links">
+                <li><a href="index.html" class="seleccionado">Portafolio</a></li>
+                <li><a href="/clima.html" class="seleccionado">El clima</a></li>
+                <li><a href="/mate.html" class="seleccionado">Operaciones</a></li>
+                <li><a href="/palabras.html" class="seleccionado">Palabras</a></li>
+            </ul>
+        </div>
+    <img src="/img/conver.png" alt="" class="conversor-imagen">
+    <p class="parrafo">Escoje la moneda e ingresa la cantidad para realizar la conversion</p>
+    
+    <div class="container">
+        <div class="moneda">
+            <select id="moneda-uno">
+                <option value="CAD">Dólar Canadiense</option>
+                <option value="USD">Dólar Estadounidense</option>
+                <option value="EUR">Euro</option>
+                <option value="CHF">Franco Suizo</option>
+                <option value="GBP">Libra Esterlina</option>
+                <option value="MXN">Peso Argentino</option>
+                <option value="MXN" selected>Peso Mexicano</option>
+                <option value="RUB">Rublo Ruso</option>
+                <option value="VES">Bolívar</option>
+                <option value="JPY">Yen Japones</option>
+                <option value="CNH">Yuan Chino</option>
+            </select>
+
+            <input type="number" id="cantidad-uno" placeholder="0" value="1">
+
+        </div>
+
+        <div class="taza-cambio-container">
+            <button class="btn" id="taza">
+                cambio
+            </button>
+
+            <div class="cambio" id="cambio"></div>
+
+        </div>
+
+        <div class="moneda">
+            <select id="moneda-dos">
+                <option value="CAD">Dólar Canadiense</option>
+                <option value="USD" selected>Dólar Estadounidense</option>
+                <option value="EUR">Euro</option>
+                <option value="CHF">Franco Suizo</option>
+                <option value="GBP">Libra Esterlina</option>
+                <option value="MXN">Peso Argentino</option>
+                <option value="MXN">Peso Mexicano</option>
+                <option value="RUB">Rublo Ruso</option>
+                <option value="VES">Bolívar</option>
+                <option value="JPY">Yen Japones</option>
+                <option value="CNH">Yuan Chino</option>
+            </select>
+
+            <input type="number" id="cantidad-dos" placeholder="0">
+
+        </div>
+    </div>
+    
+    <script src="/js/conver.js"></script>
+</body>
+</html> 

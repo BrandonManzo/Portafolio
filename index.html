@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/estilo.css">
+    <title>Portafolio Brandon</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Portafolio</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Desarrollador Web Jr.</h2>
+                <p class="descripcion">Un buen desarrollador de software trabaja con disciplina y constancia desde el primer día.</p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="/img/foto.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Brandon Martinez</span> </h2>
+            <h3>Desarrollador Web Front End</h3>
+            <p>Desarrollador web Frond End HTML y CSS complementando con la tecnologia de JavaScript para diferentes tipos de desarrollos web, adaptandolo a las necesidades de los clientes.</p>
+            <p>Del lado del Back End he realizado tambien proyectos personales. Teniendo siempre la parte de mantener actualizados mis proyectos para que día a día se vean de una manera más profesional y sean llamativos y funcionales.</p>
+            <h2>Formación Academica.</h2>
+            <p>■ Tecnico en programación. Preparatoria Cecytej.</p>
+            <p>■ Ingeriero en computación. Centro Universitario Uteg.</p>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Proyectos Personales</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>El clima</h4>
+                    <a href="/clima.html">Ir a proyecto</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/img/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Operaciones basicas</h4>
+                    <a href="/mate.html">Ir a proyecto</a>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/img/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Convertidor de modena</h4>
+                    <a href="/conver.html">Ir a proyecto</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/img/proyecto4.jpg" alt="">
+                <div class="info">
+                    <h4>Completa el texto</h4>
+                    <a href="/palabras.html">Ir a proyecto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

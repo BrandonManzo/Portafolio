@@ -1,0 +1,125 @@
+body{
+    background-image: url(/img/palabra.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#inicio .contenido header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    color: #ff5080;
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover {
+    color: #ff5080;
+}
+
+#inicio .contenido header .contenido-header .seleccionado {
+    color: #ff5080;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+span{
+    display: inline-block;
+    background-color: #FFFFFF;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.parrafo{
+    font-family: 'Caveat', cursive;
+    text-align: justify;
+}
+
+.texto{
+    max-width: 500px;
+    margin: auto;
+    border: 2px solid #808000;
+    padding: 5px;
+    background: radial-gradient(circle at top left, #2874A6, #FFFFFF, #FF0000);
+    border-radius: 10px;
+}
+
+.texto p{
+    line-height: 28px;
+}
+
+.opciones{
+    background-color: rgb(244, 244, 244);
+    max-width: 500px;
+    margin: 30px auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    min-height: 40px;
+    background: radial-gradient(circle at top left, #2874A6, #FFFFFF, #FF0000);
+}
+
+.opciones .palabra{
+    display: inline-block;
+    background-color: cadetblue;
+    color: #fff;
+    margin: 5px;
+    padding: 2px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.opciones .palabra:hover{
+    background-color: yellow;
+    color: red;
+}
+#resultado{
+    color: #DA4ABC;
+    text-align: center;
+}
+
+button{
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: #F18CDC;
+    border: 2px solid #DA4ABC;
+    color: black;
+    cursor: pointer;
+    border-radius: 35% 15rem / 100px 30%;
+}
